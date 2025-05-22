@@ -20,6 +20,9 @@ importers:
       vue-konva:
         specifier: ^3.2.1
         version: 3.2.1(konva@9.3.20)(vue@3.5.14)
+      vue-router:
+        specifier: ^4.5.1
+        version: 4.5.1(vue@3.5.14)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^5.2.3
@@ -501,6 +504,9 @@ packages:
   '@vue/compiler-ssr@3.5.14':
     resolution: {integrity: sha512-Y0G7PcBxr1yllnHuS/NxNCSPWnRGH4Ogrp0tsLA5QemDZuJLs99YjAKQ7KqkHE0vCg4QTKlQzXLKCMF7WPSl7Q==}
 
+  '@vue/devtools-api@6.6.4':
+    resolution: {integrity: sha512-sGhTPMuXqZ1rVOk32RylztWkfXTRhuS7vgAKv0zjqk8gbsHkJ7xfFf+jbySxt7tWObEJwyKaHMikV/WGDiQm8g==}
+
   '@vue/devtools-core@7.7.6':
     resolution: {integrity: sha512-ghVX3zjKPtSHu94Xs03giRIeIWlb9M+gvDRVpIZ/cRIxKHdW6HE/sm1PT3rUYS3aV92CazirT93ne+7IOvGUWg==}
     peerDependencies:
@@ -919,6 +925,11 @@ packages:
     peerDependencies:
       konva: '>7'
       vue: ^3
+
+  vue-router@4.5.1:
+    resolution: {integrity: sha512-ogAF3P97NPm8fJsE4by9dwSYtDwXIY1nFY9T6DyQnGHd1E2Da94w9JIolpe42LJGIl0DwOHBi8TcRPlPGwbTtw==}
+    peerDependencies:
+      vue: ^3.2.0
 
   vue@3.5.14:
     resolution: {integrity: sha512-LbOm50/vZFG6Mhy6KscQYXZMQ0LMCC/y40HDJPPvGFQ+i/lUH+PJHR6C3assgOQiXdl6tAfsXHbXYVBZZu65ew==}
@@ -1370,6 +1381,8 @@ snapshots:
       '@vue/compiler-dom': 3.5.14
       '@vue/shared': 3.5.14
 
+  '@vue/devtools-api@6.6.4': {}
+
   '@vue/devtools-core@7.7.6(vite@6.3.5)(vue@3.5.14)':
     dependencies:
       '@vue/devtools-kit': 7.7.6
@@ -1779,6 +1792,11 @@ snapshots:
   vue-konva@3.2.1(konva@9.3.20)(vue@3.5.14):
     dependencies:
       konva: 9.3.20
+      vue: 3.5.14
+
+  vue-router@4.5.1(vue@3.5.14):
+    dependencies:
+      '@vue/devtools-api': 6.6.4
       vue: 3.5.14
 
   vue@3.5.14:
